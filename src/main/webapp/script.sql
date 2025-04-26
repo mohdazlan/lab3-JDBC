@@ -11,3 +11,9 @@ CREATE TABLE Transfers (
                            status VARCHAR(20) DEFAULT 'Pending'
 );
 
+CREATE TABLE Users (
+                       user_id VARCHAR(20) PRIMARY KEY,
+                       full_name VARCHAR(100) NOT NULL,
+                       password VARCHAR(100) NOT NULL,
+                       role VARCHAR(20) NOT NULL  -- 'student' or 'admin'
+);
